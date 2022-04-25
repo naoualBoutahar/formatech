@@ -1,0 +1,7 @@
+{
+  "name": "Formatech",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
