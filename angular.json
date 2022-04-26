@@ -42,7 +42,7 @@
             "namedChunks": true
           },
           "configurations": {
-            "production": {
+            "courseion": {
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -76,8 +76,8 @@
             "browserTarget": "app:build"
           },
           "configurations": {
-            "production": {
-              "browserTarget": "app:build:production"
+            "courseion": {
+              "browserTarget": "app:build:courseion"
             },
             "ci": {
               "progress": false
@@ -135,8 +135,8 @@
             "devServerTarget": "app:serve"
           },
           "configurations": {
-            "production": {
-              "devServerTarget": "app:serve:production"
+            "courseion": {
+              "devServerTarget": "app:serve:courseion"
             },
             "ci": {
               "devServerTarget": "app:serve:ci"

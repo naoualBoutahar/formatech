@@ -1,3 +1,3 @@
 export const environment = {
-  production: true
+  courseion: true
 };

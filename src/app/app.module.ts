@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import {AngularFireModule} from '@angular/fire/compat';
 import {environment} from 'src/environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import {environment} from 'src/environments/environment';
   entryComponents: [],
   imports: [
      AngularFireModule.initializeApp(environment.firebase),
+     AngularFirestoreModule,
       BrowserModule,
      IonicModule.forRoot(),
       AppRoutingModule
