@@ -1,0 +1,44 @@
+$white-color: #fff;
+$height100: 100%;
+
+ion-grid {
+
+    width:100%;
+    height: $height100;
+    background: #7474BF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+ion-row {
+    height: $height100;
+    align-content: center;
+    justify-content: center;
+   margin: 10px;
+}
+
+ion-col {
+    border: 1px solid #7474BF;
+    background: $white-color;
+     padding: 40px;
+     border-radius: 15px;
+     box-shadow:2px 3px 5px #999;
+}
+
+ion-button {
+    font-weight: 300;
+    margin: 20px;
+    border-radius: 10px;
+}
+ion-input{
+    margin: 20px;
+}
+
+
+
+@media (min-width: 240px) and (max-width: 768px) {
+    
+    ion-col {
+        border: none;
+    }
+}

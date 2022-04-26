@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase : {
+    apiKey: "AIzaSyDanM9FfHRWMpvbw0OW2bjZ8USYTuez87I",
+  authDomain: "forma-tech-d035e.firebaseapp.com",
+  projectId: "forma-tech-d035e",
+  storageBucket: "forma-tech-d035e.appspot.com",
+  messagingSenderId: "379964769121",
+  appId: "1:379964769121:web:93eb47f61089a1dbe8bb20"
+  }
 };
 
 /*
