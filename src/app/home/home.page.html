@@ -19,9 +19,10 @@
       <ion-label ><h4>Price :{{course.price}}DH</h4></ion-label>    
     </div>
 </ion-col >
-<ion-col >    <ion-button expand="block" size="large"  [routerLink]="['/', 'details', course.title]">Details</ion-button>
+<ion-col >  
+  <ion-button expand="block" size="large"   (click)='openModal()' >Details</ion-button>
 
-  <ion-button expand="block" size="large"   [routerLink]="['/', 'details', course.title]"> <ion-icon name="bookmark"></ion-icon>
+  <ion-button expand="block" size="large"> <ion-icon name="bookmark"></ion-icon>
 </ion-button>
 
 </ion-col></ion-row>
