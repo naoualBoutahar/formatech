@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>Courses</ion-title>
-    <ion-button slot="end" size="small" class="ion-margin-end"  (click)="showProfile()">
+    <ion-button slot="end" size="small" class="ion-margin-end" class="dif" (click)="showProfile()">
       <ion-icon name="person"></ion-icon>
 
     </ion-button>
@@ -9,6 +9,7 @@
 </ion-header>
 
 <ion-content>
+  
 <ion-list>
 
  <ion-item *ngFor="let course of courses async">
@@ -26,7 +27,7 @@
 <ion-col >  
   <ion-button expand="block" size="large" (click)='openCourse(course)'>Details</ion-button>
 
-  <ion-button expand="block" size="large"> <ion-icon name="bookmark" ></ion-icon>
+  <ion-button expand="block" size="large" (click)='addToCart(course)'> <ion-icon name="bookmark" ></ion-icon>
 </ion-button>
 
 </ion-col></ion-row>
@@ -34,15 +35,15 @@
         
     </ion-item>
             
-         
-      
-
-
-   
+        
     
 </ion-list>
 
-
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button (click)="openCart()" #cart>
+      <ion-icon name="cart" class="cart-icon"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
   
      </ion-content>
         

@@ -1,3 +1,4 @@
+import { CartModalPageModule } from './pages/cart-modal/cart-modal.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
@@ -23,6 +24,7 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
       BrowserModule,
      IonicModule.forRoot(),
       AppRoutingModule,
+      CartModalPageModule,
       //I added both initializations -> versions issue
       AngularFireModule.initializeApp(environment.firebase),
       provideFirebaseApp(() => initializeApp(environment.firebase)),
