@@ -1,0 +1,27 @@
+ion-avatar {
+    width: 128px;
+    height: 128px;
+  }
+   
+  .preview {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: flex-start;
+  }
+   
+  .fallback {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background: #7274bf;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  ion-button{
+    --background:#7274bf;
+  }

@@ -1,28 +1,45 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+import {
+  redirectUnauthorizedTo,
+  redirectLoggedInTo,
+  canActivate,
+} from '@angular/fire/auth-guard';
+ 
+const redirectUnauthorizedToLogin = () => redirectUnauthorizedTo(['']);
+const redirectLoggedInToHome = () => redirectLoggedInTo(['home']);
+ 
+
+
 const routes: Routes = [
   
  
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () =>
+     import('./pages/login/login.module').then( m => m.LoginPageModule),
+
+  
   },
-  {
-    path: 'signup',
-    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
-  },
+  
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule),
+  },
+ 
+  {
+    path: 'splash',
+    loadChildren: () => import('./pages/splash/splash.module').then( m => m.SplashPageModule)
+  },
+
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
   },
   {
     path: 'details',
-    loadChildren: () => import('./details/details.module').then( m => m.DetailsPageModule)
-  },
-  {
-    path: 'splash',
-    loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
+    loadChildren: () => import('./pages/details/details.module').then( m => m.DetailsPageModule)
   },
   
   

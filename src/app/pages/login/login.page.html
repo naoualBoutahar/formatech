@@ -1,0 +1,61 @@
+<!-- <ion-grid>
+	<ion-row justify-content-center>
+		<ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+			<div text-center>
+				<h1>Welcome back!</h1>
+			</div>
+			<div padding>
+				<ion-item>
+					<ion-input [(ngModel)]='email' type="email" placeholder="Email"></ion-input>
+				</ion-item>
+
+				<ion-item>
+					<ion-input [(ngModel)]='password' type="password" placeholder="Password"></ion-input>
+				</ion-item>
+			</div>
+
+			<div padding>
+				<ion-button size="large"  expand="block" (click)='login()'>Login</ion-button> 
+        <br>
+        <h5 (click)='signup()'>Don't have account? <ion-text color='primary'>signup here</ion-text></h5>
+
+			</div>
+		</ion-col>
+	</ion-row>
+</ion-grid> -->
+<ion-grid >
+	<ion-row justify-content-center > 
+		<ion-col  align-self-center size-md="6" size-lg="5" size-xs="12">
+
+	<form text-center (ngSubmit)="login()" [formGroup]="credentials">
+	<div text-center>
+		<h1>Welcome back!</h1>
+	</div>
+	<div padding><ion-item fill="solid" class="ion-margin-bottom">
+<ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+<ion-note slot="error" *ngIf="(email.dirty || email.touched) && email.errors">Email is invalid</ion-note>
+</ion-item>
+<ion-item fill="solid" class="ion-margin-bottom">
+<ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+<ion-note slot="error" *ngIf="(password.dirty || password.touched) && password.errors">Password needs to be 6 characters</ion-note>
+</ion-item>
+</div>
+<div padding><ion-button size="large"  type="submit" expand="block" [disabled]="!credentials.valid"  (click)="login()">Log in</ion-button>
+<ion-button type="button" size="large"  expand="block" color="secondary" (click)="register()">Create account</ion-button>
+</div>
+
+
+</form></ion-col></ion-row></ion-grid>
+
+           
+         
+         
+
+    
+ 
+ 
+
+  
+
+
+

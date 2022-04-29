@@ -1,0 +1,29 @@
+ion-item {
+    width: 90%;
+    height: 50%;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow:2px 3px 5px #999;
+
+    }
+img{
+    width: 100px;
+    height: auto;
+    margin :10px auto;
+    
+}
+
+ion-col{
+    display: flex;
+    flex-direction: column ;
+    text-align: center;
+align-items: center;
+
+}
+ion-button{
+    --background:red;}
+p{
+    padding:10px 40px;
+}
+
+
