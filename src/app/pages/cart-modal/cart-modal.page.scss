@@ -1,0 +1,26 @@
+img{
+    width: 100px;
+    height: auto;
+    margin :10px auto;
+    
+}
+
+ion-col{
+    display: flex;
+    flex-direction: col;
+    text-align: center;
+align-items: center;
+margin:  auto;}
+div .infos{
+    
+    margin-left: 30px;
+}
+ion-button{
+    --background:#7274bf;
+    border-radius: 30px;
+    margin: auto;
+}
+ion-button.close{
+    --background :red;
+}
+
